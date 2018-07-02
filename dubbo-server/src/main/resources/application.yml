@@ -1,0 +1,12 @@
+server:
+  port: 9002
+spring:
+  dubbo:
+    application:
+      name: dubbo-provider
+    registry:
+      address: zookeeper://127.0.0.1:2101?backup=127.0.0.1:2102,127.0.0.1:2103
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: org.com.ck.service
